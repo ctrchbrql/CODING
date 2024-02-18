@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body {
+	  background-image: url('STI.jpg');
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  background-size: cover;
+	}
+	input, button{
+		font-family: calibri;
+		color: rgb(17, 21, 22);
+		font-size: 20px;
+	}
+	h2{
+		margin: 0;
+		font-size: 50px;
+	}
+	img{
+		max-width: 100%;
+	}
+	:focus{
+		outline: bold;
+	}
+	.wrapper{
+		min-height: 100vh;
+		background-size: cover;
+		background-repeat: no repeat;
+		display: flex;
+		align-items: center;
+	}
+	.inner{
+		padding: 50px;
+		background: #fff;
+		max-width: 850px;
+		margin: auto;
+		display: flex;
+	}
+	.inner .image-holder{
+		width: 200%;
+	}
+	.inner form{
+		width: 70%;
+		padding-top: 40px;
+		padding-left: 45px;
+		padding-right: 45px;
+	}
+	.inner h2{
+		text-transform: uppercase;
+		font-size: 25px;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+</style>
+		<title>STI Enrollment Form</title>
+		<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+</head>
+<body>
+
+		<div class = "wrapper">
+			<div class = "inner">
+				<div class = "image-holder">
+					<img src = "40.jpg" alt = "STI" height="100%">
+				</div>
+		<form>
+			<h2 style = "font-size: 40px;">STI ENROLLMENT FORM</h2>
+			
+			<div class = "form-group">
+				<input type = "text"  placeholder = "Full Name" class = "form-control"><br><br>
+				<input type = "text" placeholder = "Student ID" class = "form-control"><br><br>
+			</div>
+			
+			<div class = "form-wrapper">
+				<input type = "text" placeholder = "Address" class ="form-control"><br><br>
+				<input type = "text" placeholder = "Contact Number" class = "form-control"><br><br>
+				<input type = "text" placeholder = "Program" class = "form-control"><br><br>
+			</div>
+			
+			<div class = "form-wrapper">
+				<label for = "Gender"><strong>Gender<strong></label><br>
+				  <input type = "radio" id= "gender" name = "gender" value = "MALE">
+				<label for = "gender1">Male</label><br>
+			  	<input type = "radio" id= "gender" name = "gender" value = "Female">
+				<label for = "gender1">Female</label><br>
+			  	<input type = "radio" id= "gender" name = "gender" value = "Prefer not to say">
+				<label for = "gender1">Prefer not to say</label><br><br>
+			</div>
+		  	<button type = "button" autofocus onclick ="alert('You are officially enrolled')"><strong>Submit</strong></button> 
+			  <button type = "button" autofocus onclick ="alert('Totally reset, please fill again')"><strong>Reset</strong></button>
+			
+</body>
+</html>
